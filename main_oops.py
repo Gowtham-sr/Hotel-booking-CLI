@@ -23,7 +23,7 @@ class Hotel:
     def __init__(self, hotel_id):
         self.hotel_id = hotel_id
         self.name = df.loc[df["id"] == self.hotel_id, "name"].squeeze()
-        # init - Whenever you're creating a class instance, this method is called in background. 
+        # init - Whenever you're creating a class instance, this init method is called in background. 
         # init - If you want to add arguments in class, then put them in init method
         # self - a variable which holds instance that is being created
         # self.name - Instance variable(Specific to what instance you're creating) [{hotel_id}: Left side - property of variable, Right side - value] 
