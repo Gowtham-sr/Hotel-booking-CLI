@@ -27,7 +27,7 @@ class Hotel:
         # init - If you want to add arguments in class, then put them in init method
         # self - a variable which holds instance that is being created
         # self.name - Instance variable(Specific to what instance you're creating) [{hotel_id}: Left side - property of variable, Right side - value] 
-        # arguments in this method can be used for all of this class's methods
+        # arguments in this method(init) can be used for all of this class's methods
 
     def book(self):
         """Book a hotel and change its availability to no"""
