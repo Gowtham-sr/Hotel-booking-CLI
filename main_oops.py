@@ -17,7 +17,7 @@ class Hotel:
     # The class and methods are a blueprint for instance(objects)
 
     watermark = "The United Kingdom Company"
-    # "Class variable" - common for all
+    # "Class variable" - common for all instances
 
     def __init__(self, hotel_id):
         self.hotel_id = hotel_id
@@ -72,7 +72,7 @@ class ReservationTicket:
         """
         return content
 
-    # Property -> Defined as a method, but behaves like a variable, so used in above method as a variable
+    # Property -> Defined as a method, but behaves like a variable, so used in the be method as a variable
     # Here -> the_customer_name = name
     @property
     def the_customer_name(self):
@@ -94,14 +94,19 @@ print(hotel1.available())
 
 print(hotel.name)
 print(hotel1.name)
+# Instance variable - name changes according to what instance you're creating
 
 print(hotel.watermark)
 print(hotel1.watermark)
+# Class variable - name is common
 
 print(Hotel.watermark)
+# Hotel - class
 
 print(Hotel.get_hotel_count(data=df))
 print(hotel1.get_hotel_count(data=df))
+# class method (bound to class and not to specific instance)
+
 
 ticket = ReservationTicket(customer_name="gowtham selvaraj  ", hotel_object=hotel1)
 print(ticket.the_customer_name)
