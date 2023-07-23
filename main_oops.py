@@ -18,7 +18,7 @@ class Hotel:
 
     watermark = "The United Kingdom Company"
 
-    # Class variable - common for all
+    # "Class variable" - common for all
 
     def __init__(self, hotel_id):
         self.hotel_id = hotel_id
@@ -26,7 +26,7 @@ class Hotel:
         # init - Whenever you're creating a class instance, this init method is called in background. 
         # init - If you want to add arguments in class, then put them in init method
         # self - a variable which holds instance that is being created
-        # self.name - Instance variable(Specific to what instance you're creating) [{hotel_id}: Left side - property of variable, Right side - value] 
+        # self.name - # "Instance variable"(Specific to what instance you're creating) [{hotel_id}: Left side - property of variable, Right side - value] 
         # arguments in this method(init) can be used for all of this class's methods
 
     def book(self):
