@@ -17,7 +17,6 @@ class Hotel:
     # The class and methods are a blueprint for instance(objects)
 
     watermark = "The United Kingdom Company"
-
     # "Class variable" - common for all
 
     def __init__(self, hotel_id):
