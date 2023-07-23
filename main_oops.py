@@ -72,7 +72,7 @@ class ReservationTicket:
         """
         return content
 
-    # Property -> Defined as a method, but behaves like a variable, so used in the be method as a variable
+    # Property -> Defined as a method, but behaves like a variable, so used in the below method as a variable
     # Here -> the_customer_name = name
     @property
     def the_customer_name(self):
