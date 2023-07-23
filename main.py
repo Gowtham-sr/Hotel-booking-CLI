@@ -70,6 +70,7 @@ hotel = Hotel(hotel_ID)
 try:
     if hotel.available():
         credit_card = SecureCreditCard(number="1234567890123456")
+        # Inherits parent class(CreditCard) init method
         if credit_card.validate(expiration='12/26', holder='JOHN SMITH', cvc="123"):
             if credit_card.authenticate(given_password="mypass"):
                 hotel.book()
